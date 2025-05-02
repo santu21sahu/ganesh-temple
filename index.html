@@ -3,373 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>फंडिंग अभियान</title>
-
-  <meta name="description" content="श्री रूद्र चंडी महायज्ञ के पावन अवसर पर भव्य आयोजन एवं दान का पुण्य अवसर। अभी जुड़ें।">
-
-  <!-- Open Graph Meta Tags (for Facebook, WhatsApp, LinkedIn etc.) -->
-  <meta property="og:title" content="फंडिंग अभियान">
-  <meta property="og:description" content="श्री रूद्र चंडी महायज्ञ के पावन अवसर पर भव्य आयोजन एवं दान का पुण्य अवसर। अभी जुड़ें।">
-  <meta property="og:image" content="https://santu21sahu.github.io/ganesh-temple/website_screenshot.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://santu21sahu.github.io/ganesh-temple/">
-  <meta property="og:type" content="website">
-
-
-
+  <title>धन्यवाद</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * { box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fffbe6;
+      background: linear-gradient(135deg, #ffeb3b, #ff9800);
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      animation: fadeIn 1s ease-in-out;
     }
-    .container {
-      background-color: #ffffff;
-      padding: 40px 30px;
-      border-radius: 10px;
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-      text-align: center;
-      max-width: 1020px;
-      width: 90%;
-      animation: fadeIn 1s ease;
-    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    h1 {
-      color: #e65100;
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-    .info p {
-      padding: 12px;
-      border-radius: 10px;
-      margin: 10px 0;
-      font-size: 1.1rem;
-      line-height: 1.5;
-    }
-    .para1 {
-      background-color: #ffecb3;
-      color: #5d4037;
-      font-weight: bold;
-      border-left: 5px solid #ff9800;
-    }
-    .para2 {
-      background-color: #c8e6c9;
-      color: #1b5e20;
-      font-style: italic;
-      border-left: 5px solid #388e3c;
-    }
-    .para3 {
-      background-color: #bbdefb;
-      color: #0d47a1;
-      text-decoration: underline;
-      border-left: 5px solid #1976d2;
-    }
-    .para4 {
-      background-color: #ffebee;
-      color: #c2185b;
-      font-weight: bold;
-      font-size: 1.2rem;
-      border-left: 5px solid #d32f2f;
-    }
-    .stats {
-      margin: 20px 0;
-      font-size: 1rem;
-      color: #333;
-      background: #fff8e1;
-      border-radius: 10px;
-      padding: 15px;
-      line-height: 1.6;
-      border: 1px dashed #f57c00;
-    }
-    .progress-bar {
-      width: 100%;
-      height: 30px;
-      background-color: #eee;
-      border-radius: 15px;
-      overflow: hidden;
-      margin: 20px 0;
-    }
-    .progress {
-      height: 100%;
-      background: linear-gradient(90deg, #4caf50, #81c784);
-      width: 0%;
-      display: flex;
-      align-items: center;
-      padding-left: 10px;
-      color: white;
-      font-weight: bold;
-      font-size: 1rem;
-      border-radius: 15px 0 0 15px;
-      transition: width 0.5s ease;
-    }
-    .fund-details {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
-      font-size: 1.1rem;
+
+    .container {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       text-align: center;
-    }
-    .fund-details span {
-      margin: 0 15px;
-    }
-    .donor-count {
-      color: #4caf50;
-      font-weight: bold;
-    }
-    .days-left {
-      color: #0d47a1;
-      font-weight: bold;
-    }
-    .amount-options {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      gap: 3px;
-      overflow-x: auto;
-    }
-    .amount-btn {
-      background: #ffecb3;
+      width: 90%;
+      max-width: 550px;
       border: 2px solid #ff9800;
-      padding: 10px 10px;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: all 0.3s;
-      white-space: nowrap;
+      border-left: 10px solid #ff5722;
     }
-    .amount-options::-webkit-scrollbar {
-      height: 6px;
-     }
-    .amount-options::-webkit-scrollbar-thumb {
-      background-color: #ccc;
-      border-radius: 3px;
-      }
-    .amount-btn.selected {
-      background: #4caf50;
-      color: #fff;
-      border-color: #388e3c;
+
+    .thank-you-header {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: #e65100;
+      text-shadow: 2px 2px 10px rgba(255, 152, 0, 0.8);
+      margin-bottom: 30px;
     }
-    #customAmountContainer {
-      margin-top: 15px;
-      display: none;
+
+    .donation-info {
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 15px;
+      background: #fff8e1;
+      color: #4e342e;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: left;
+      box-shadow: 0 5px 10px rgba(255, 152, 0, 0.2);
     }
-    #customAmount {
-      padding: 10px;
-      width: 70%;
-      font-size: 1.1rem;
-      border: 2px solid #4caf50;
-      border-radius: 8px;
-      margin-top: 10px;
+
+    .donation-info p {
+      margin: 10px 0;
     }
-    #selectedAmountDisplay {
-      margin-top: 15px;
-      font-size: 1.3rem;
-      color: #4caf50;
+
+    .donation-info .title {
+      color: #e65100;
+      font-size: 1.8rem;
       font-weight: bold;
     }
-    button#donate-btn {
+
+    .donation-info .bank-info {
+      font-size: 1.2rem;
+      color: #f57c00;
+    }
+
+    .share-icon {
       margin-top: 20px;
-      background-color: #43a047;
-      color: white;
-      border: none;
-      padding: 14px 30px;
-      font-size: 1.1rem;
-      border-radius: 10px;
+      font-size: 2.5rem;
+      color: #f57c00;
       cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    button#donate-btn:hover {
-      background-color: #388e3c;
-      transform: scale(1.05);
+      transition: transform 0.3s ease;
     }
 
-    /* Curved Text Style */
-   .yagya-name {
-    background-color: #f2f2f2;
-    padding: 20px; /* increase padding */
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 0px;
-    display: inline-block; /* NEW: makes div size fit content */
-    width: 100%; /* NEW: full width */
-  }
-
-  .yagya-name h1 {
-    font-size: 2rem;
-    color: #d32f2f;
-    font-weight: bold;
-    margin: 0; /* remove default h1 margin */
-    font-family: 'Segoe UI', sans-serif;
-  }
-
-.scroll-text-wrapper {
-  overflow: hidden;
-  background-color: #f9fbe7;
-  padding: 10px 0;
-}
-
-.scroll-text {
-  display: inline-block;
-  white-space: nowrap;
-  padding-left: 100%;
-  animation: scroll-left 15s linear infinite;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #d32f2f;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-
-.heading-funding {
-    color: orange;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Styling for the clicked button */
-  .active-btn {
-    background-color: #4CAF50; /* Change to any color you like */
-    color: white;
-  }
- #customAmountContainer {
-      display: none; /* Initially hide the custom amount input field */
+    .share-icon:hover {
+      transform: scale(1.2);
     }
 
-    @media (max-width: 480px) {
-  .container {
-    padding: 15px;
-  }
-  .scroll-text {
-    font-size: 1rem;
-  }
-}
-body {
-  padding: 10px;
-}
+    @media (max-width: 600px) {
+      .donation-info {
+        font-size: 1.2rem;
+        padding: 15px;
+      }
+
+      .thank-you-header {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-<div class="scroll-text-wrapper">
-  <div class="scroll-text">
-    श्री रूद्र चंडी महायज्ञ | आरसेल-कुट्टी, जबड़ा, सिमरिया, चतरा, झारखंड |
-  </div>
-    
-
-    <h1 class="heading-funding"><i class="fas fa-hands-helping"></i> फंडिंग अभियान</h1>
-
-    <div class="info">
-      <p class="para1"><i class="fas fa-bullseye"></i> हमारा लक्ष्य ₹2,50,000 जुटाना है।</p>
-      <p class="para2"><i class="fas fa-heart"></i> आपका योगदान अमूल्य है!</p>
-      <p class="para3"><i class="fas fa-users"></i> हर योगदान इस दिव्य यज्ञ का एक आहुति है।</p>
+    <div class="thank-you-header">
+      <i class="fas fa-heart"></i> धन्यवाद! <i class="fas fa-heart"></i>
     </div>
 
-    
-
-    <div class="stats" id="fundStats">
-      <div class="progress-bar">
-        <div class="progress" id="progressBar">
-          <span id="progressAmount">₹0</span>
-        </div>
-      </div>
-
-      <div class="fund-details">
-        <span>दानकर्ता: <span id="donorNumber" class="donor-count">0</span></span>
-        <span>दिन शेष: <span id="daysLeft" class="days-left">0</span></span>
-      </div>
+    <div class="donation-info" id="donorInfo">
+      <p>धन्यवाद <strong id="donorName"></strong> जी!</p>
+<p>आपका दान: <strong id="donationAmount"></strong></p>
+<p>लेन-देन आईडी: <strong id="txnId"></strong></p>
     </div>
 
-    <div class="amount-options" id="amountOptions">
-  <div class="amount-btn" data-amount="21">₹21</div>
-  <div class="amount-btn" data-amount="511">₹51</div>
-  <div class="amount-btn" data-amount="101">₹101</div>
-  <div class="amount-btn" id="otherBtn">अन्य राशि</div>
-</div>
-
-<div id="customAmountContainer">
-  <input type="number" id="customAmount" placeholder="अपनी राशि दर्ज करें">
-</div>
-
-    <div id="selectedAmountDisplay"></div>
-
-    <button id="donate-btn"><i class="fas fa-donate"></i> दान करें</button>
+    <!-- सिर्फ Share Icon -->
+    <div class="share-icon" onclick="sharePage()">
+      <i class="fas fa-share-alt"></i>
+    </div>
   </div>
-<script>
-  // Get references to the buttons, input field, and container
-  const amountBtns = document.querySelectorAll('.amount-btn[data-amount]');
-  const customAmountContainer = document.getElementById('customAmountContainer');
-  const customAmountInput = document.getElementById('customAmount');
-  const otherBtn = document.getElementById('otherBtn');
 
-  // Handle clicks on predefined amount buttons (₹21, ₹511, ₹101)
-  amountBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      // Remove the active class from all buttons
-      amountBtns.forEach(button => button.classList.remove('active-btn'));
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const name = urlParams.get("name");
+  const amount = urlParams.get("amount");
+  const txn = urlParams.get("txn");
 
-      // Add the active class to the clicked button
-      this.classList.add('active-btn');
-      
-      // Get the selected amount from the button's data-amount attribute
-      const selectedAmount = this.getAttribute('data-amount');
-      
-      // Show the input field if it's hidden
-      customAmountContainer.style.display = 'block';
+  document.getElementById("donorName").textContent = name;
+  document.getElementById("donationAmount").textContent = `₹${amount}`;
+  document.getElementById("txnId").textContent = txn;
+</script>
 
-      // Set the input value to the selected amount
-      customAmountInput.value = selectedAmount;
-    });
-  });
-
-  // Handle click on "अन्य राशि" (Other Amount)
-  otherBtn.addEventListener('click', function() {
-    // Remove the active class from all buttons
-    amountBtns.forEach(button => button.classList.remove('active-btn'));
-    
-    // Show the input field and clear any previous amount
-    customAmountContainer.style.display = 'block';
-    customAmountInput.value = '';  // Clear the input field for custom amount
-
-    // Add the active class to the "Other" button
-    this.classList.add('active-btn');
-  });
-
-  function calculateDaysLeft() {
-    const today = new Date();
-    const targetDate = new Date('2025-05-14'); // Target: 20 May 2025
-
-    // Difference in milliseconds
-    const diffTime = targetDate - today;
-
-    // Convert milliseconds to days
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-
-    // Show result in the span
-    document.getElementById('daysLeft').textContent = diffDays;
-  }
-
-  // Call the function when page loads
-  calculateDaysLeft();
-
-</script></body>
+</body>
 </html>
