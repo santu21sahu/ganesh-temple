@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>धन्यवाद</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffeb3b, #ff9800);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 550px;
+      border: 2px solid #ff9800;
+      border-left: 10px solid #ff5722;
+    }
+
+    .thank-you-header {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: #e65100;
+      text-shadow: 2px 2px 10px rgba(255, 152, 0, 0.8);
+      margin-bottom: 30px;
+    }
+
+    .donation-info {
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 15px;
+      background: #fff8e1;
+      color: #4e342e;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: left;
+      box-shadow: 0 5px 10px rgba(255, 152, 0, 0.2);
+    }
+
+    .donation-info p {
+      margin: 10px 0;
+    }
+
+    .donation-info .title {
+      color: #e65100;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .donation-info .bank-info {
+      font-size: 1.2rem;
+      color: #f57c00;
+    }
+
+    .share-icon {
+      margin-top: 20px;
+      font-size: 2.5rem;
+      color: #f57c00;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .share-icon:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      .donation-info {
+        font-size: 1.2rem;
+        padding: 15px;
+      }
+
+      .thank-you-header {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="thank-you-header">
+      <i class="fas fa-heart"></i> धन्यवाद! <i class="fas fa-heart"></i>
+    </div>
+
+    <div class="donation-info" id="donorInfo">
+      <p>धन्यवाद <strong id="donorName"></strong> जी!</p>
+<p>आपका दान: <strong id="donationAmount"></strong></p>
+<p>लेन-देन आईडी: <strong id="txnId"></strong></p>
+    </div>
+
+    <!-- सिर्फ Share Icon -->
+    <div class="share-icon" onclick="sharePage()">
+      <i class="fas fa-share-alt"></i>
+    </div>
+  </div>
+
+  <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const name = urlParams.get("name");
+  const amount = urlParams.get("amount");
+  const txn = urlParams.get("txn");
+
+  document.getElementById("donorName").textContent = name;
+  document.getElementById("donationAmount").textContent = `₹${amount}`;
+  document.getElementById("txnId").textContent = txn;
+</script>
+
+</body>
+</html>
