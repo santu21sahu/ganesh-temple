@@ -121,6 +121,16 @@
   document.getElementById("donorName").textContent = name;
   document.getElementById("donationAmount").textContent = `₹${amount}`;
   document.getElementById("txnId").textContent = txn;
+
+    const urlParams = new URLSearchParams(window.location.search);
+const name = urlParams.get("name");
+const amount = urlParams.get("amount");
+const txn = urlParams.get("txn");
+
+if (!name || !amount || !txn) {
+  // बिना सही parameters के आए हैं — वापस भेजें
+  window.location.href = "index.html";
+}
 </script>
 
 </body>
