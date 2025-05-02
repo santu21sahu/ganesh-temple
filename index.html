@@ -115,18 +115,20 @@
       transition: width 0.5s ease;
     }
     .fund-details {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
-      font-size: 1.1rem;
-      text-align: center;
-      flex-wrap: nowrap; 
-      gap: 20px;
-    }
-    .fund-details span {
-      margin: 0 15px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* दोनों के बीच थोड़ी spacing */
+  font-size: 1.1rem;
+  text-align: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.fund-details span {
+  display: inline-flex;
+  align-items: center; /* Text and number vertically aligned */
+}
     .donor-count {
       color: #4caf50;
       font-weight: bold;
